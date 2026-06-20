@@ -5,6 +5,9 @@ __pycache__/
 .tmp/
 .DS_Store
 
+# Ignore Agent_Skills folder
+Agent_Skills/
+
 # npm pack artifacts
 antigravity-awesome-skills-*.tgz
 
