@@ -479,6 +479,9 @@ footer {
     box-shadow: none !important;
     border-bottom-color: var(--border-color) !important;
   }
+  .article-card:hover h3 {
+    color: var(--text-main) !important;
+  }
   .article-card:hover .article-card-image img {
     transform: none !important;
   }
@@ -486,6 +489,9 @@ footer {
     transform: none !important;
     box-shadow: none !important;
     border-color: var(--border-color) !important;
+  }
+  .card:hover h3 {
+    color: var(--text-main) !important;
   }
 }
 
