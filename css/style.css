@@ -463,27 +463,32 @@ footer {
 }
 
 /* Fix sticky hover effects on touch devices */
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   a:hover {
-    color: var(--text-main);
-    border-bottom-color: var(--border-color);
+    color: inherit !important;
+    border-bottom-color: inherit !important;
   }
   nav a:hover {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
   }
   nav a.active {
-    color: var(--text-main);
+    color: var(--text-main) !important;
   }
   .article-card:hover {
-    transform: none;
-    box-shadow: none;
+    transform: none !important;
+    box-shadow: none !important;
+    border-bottom-color: var(--border-color) !important;
   }
   .article-card:hover .article-card-image img {
-    transform: none;
+    transform: none !important;
   }
   .card:hover {
-    transform: none;
-    box-shadow: none;
-    border-color: var(--border-color);
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: var(--border-color) !important;
   }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent !important;
 }
